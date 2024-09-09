@@ -16,7 +16,6 @@ function App() {
       {users.map(user => (
         <li key={user.id}>{user.id} {user.name} {user.email}</li>
       ))}
-      {import.meta.env.VITE_API_URL}
     </div>
   )
 }
