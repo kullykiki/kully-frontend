@@ -3,7 +3,7 @@ import React,{useState, useEffect} from 'react'
 function App() {
   const [users, setusers] = useState([])
   useEffect(() => {
-    fetch('/api/users')
+    fetch(import.meta.env.VITE_API_URL+'/users')
     .then(res => res.json())
     .then(data => setusers(data))
     .catch(e => console.log(e))
